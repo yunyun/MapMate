@@ -13,6 +13,8 @@
 <script type="application/javascript" src="style/js/jquery-3.7.0.min.js"></script>
 <script type="application/javascript" src="style/js/mapmate.js"></script>
 <style>
-
+    const map = new MultiMap('map', {zoom: 10});
+    map.addMap(MultiMap.GOOGLE_MAP_TYPE, {center: {lat: 37.7749, lng: -122.4194}});
+    map.addMap(MultiMap.BAIDU_MAP_TYPE, {center: new BMap.Point(-122.01, 37.37)});
 </style>
 </html>
