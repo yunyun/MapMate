@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style/css/mapmate.css">
 </head>
 <body>
-<div id="map"></div>
+<div id="mymap"></div>
 
 </body>
+<script src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=WQD78HG9EW2cv0ZqDnDuDxd8"></script>
 <script type="application/javascript" src="style/js/jquery-3.7.0.min.js"></script>
 <script type="application/javascript" src="style/js/mapmate.js"></script>
-<style>
-    const map = new MultiMap('map', {zoom: 10});
-    map.addMap(MultiMap.GOOGLE_MAP_TYPE, {center: {lat: 37.7749, lng: -122.4194}});
-    map.addMap(MultiMap.BAIDU_MAP_TYPE, {center: new BMap.Point(-122.01, 37.37)});
-</style>
+<script type="application/javascript">
+    var opt = {
+        "type":"baidu",
+
+    };
+    var mymap = new MapMate( "mymap", opt);
+    console.info("mymap:",mymap);
+
+</script>
 </html>

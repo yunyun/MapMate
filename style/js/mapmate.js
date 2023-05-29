@@ -1,4 +1,4 @@
-class Mapmate {
+class MapMate{
 
 
     /**
