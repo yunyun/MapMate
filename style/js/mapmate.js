@@ -1,5 +1,4 @@
-class MapMate{
-
+class MapMate {
 
     /**
      * 构造函数
